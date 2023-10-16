@@ -1,0 +1,38 @@
+
+
+.header-bg {
+    width: 100vw;
+    height: 120px;
+    background-color: rgb(195, 224, 221);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
+    overflow: hidden;
+}
+
+.merch-wrapper {
+    width: 80%;
+    max-width: 1100px;
+    margin: 100px auto;
+    display: grid;
+    gap: 3%;
+}
+
+@media screen and (min-width: 550px) {
+    .merch-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .merch-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .merch-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10% 5%;
+    }
+}
